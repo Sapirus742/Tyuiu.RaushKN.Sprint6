@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             groupBoxTask_RKN = new GroupBox();
             textBoxTask_RKN = new TextBox();
             pictureBoxFormula_RKN = new PictureBox();
@@ -69,9 +70,10 @@
             // 
             // pictureBoxFormula_RKN
             // 
-            pictureBoxFormula_RKN.Location = new Point(396, 63);
+            pictureBoxFormula_RKN.Image = (Image)resources.GetObject("pictureBoxFormula_RKN.Image");
+            pictureBoxFormula_RKN.Location = new Point(398, 57);
             pictureBoxFormula_RKN.Name = "pictureBoxFormula_RKN";
-            pictureBoxFormula_RKN.Size = new Size(121, 66);
+            pictureBoxFormula_RKN.Size = new Size(135, 66);
             pictureBoxFormula_RKN.TabIndex = 1;
             pictureBoxFormula_RKN.TabStop = false;
             // 
