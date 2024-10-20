@@ -193,8 +193,12 @@
             Controls.Add(groupBoxResult_RKN);
             Controls.Add(groupBoxEnter_RKN);
             Controls.Add(groupBoxTask_RKN);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "Form1";
-            Text = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Sprint 6 | Task 1  | V19 | RaushKN";
             groupBoxTask_RKN.ResumeLayout(false);
             groupBoxTask_RKN.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBoxFormula_RKN).EndInit();
