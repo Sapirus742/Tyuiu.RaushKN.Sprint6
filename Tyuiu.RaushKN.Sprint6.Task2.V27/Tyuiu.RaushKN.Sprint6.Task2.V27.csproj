@@ -9,10 +9,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="LiveCharts.WinForms" Version="0.9.7.1" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Tyuiu.RaushKN.Sprint6.Task2.V27.Lib\Tyuiu.RaushKN.Sprint6.Task2.V27.Lib.csproj" />
   </ItemGroup>
 
