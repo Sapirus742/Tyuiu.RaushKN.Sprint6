@@ -24,7 +24,7 @@ namespace Tyuiu.RaushKN.Sprint6.Task5.V3
             {
                 double[] numbers = ds.LoadFromDataFile(path);
                 dataGridViewResult_RKN.Rows.Clear();
-                formsPlotChartResult_RKN.Plot.Clear();
+                formsPlotChartResult_RKN.Plot.Clear(); 
 
                 if (dataGridViewResult_RKN.Columns.Count == 0)
                     dataGridViewResult_RKN.Columns.Add("value", "");
