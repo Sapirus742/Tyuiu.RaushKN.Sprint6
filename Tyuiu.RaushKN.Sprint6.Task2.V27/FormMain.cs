@@ -24,17 +24,28 @@ namespace Tyuiu.RaushKN.Sprint6.Task2.V27
 
                 valueArray = ds.GetMassFunction(startStep, stopStep);
 
-                /*his.chartFunction.Titles.Add("График функции sin(x)");
+                double[] xData = new double[len];
+                double[] yData = new double[len];
 
-                this.chartFunction.ChartAreas[0].AxisX.Title = "Ось X";
-                this.chartFunction.ChartAreas[0].AxisY.Title = "Ось Y";
-                */
+                for (int i = 0; i < len; i++)
+                {
+                    xData[i] = startStep + i;
+                    yData[i] = valueArray[i];
+                }
+
+                formsPlotChartResult_RKN.Plot.Clear();
+
+                var scatter = formsPlotChartResult_RKN.Plot.Add.Scatter(xData,yData);
+
+                formsPlotChartResult_RKN.Plot.Title("График функции");
+                formsPlotChartResult_RKN.Plot.XLabel("Ось X");
+                formsPlotChartResult_RKN.Plot.YLabel("Ось Y");
+
+                formsPlotChartResult_RKN.Refresh();
+
                 for (int i = 0; i <= len - 1; i++)
                 {
                     this.dataGridViewResult_RKN.Rows.Add(Convert.ToString(startStep), Convert.ToString(valueArray[i]));
-
-                    // this.chartFunction.Series[0].Points.AddXY(startStep, valueArray[i]);
-
                     startStep++;
                 }
             }
@@ -43,6 +54,16 @@ namespace Tyuiu.RaushKN.Sprint6.Task2.V27
             {
                 MessageBox.Show("Введены неверные данные", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            FillChart();
+        }
+
+        private void FillChart()
+        {
+
         }
         private void buttonHelp_Click(object sender, EventArgs e)
         {

@@ -39,9 +39,11 @@
             pictureBoxFormula_RKN = new PictureBox();
             textBoxTask_RKN = new TextBox();
             groupBoxResult_RKN = new GroupBox();
+            formsPlotChartResult_RKN = new ScottPlot.WinForms.FormsPlot();
             dataGridViewResult_RKN = new DataGridView();
             X = new DataGridViewTextBoxColumn();
             Y = new DataGridViewTextBoxColumn();
+            backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             groupBoxEnter_RKN.SuspendLayout();
             groupBoxTask_RKN.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBoxFormula_RKN).BeginInit();
@@ -158,6 +160,7 @@
             // 
             // groupBoxResult_RKN
             // 
+            groupBoxResult_RKN.Controls.Add(formsPlotChartResult_RKN);
             groupBoxResult_RKN.Controls.Add(dataGridViewResult_RKN);
             groupBoxResult_RKN.Location = new Point(583, 12);
             groupBoxResult_RKN.Name = "groupBoxResult_RKN";
@@ -165,6 +168,14 @@
             groupBoxResult_RKN.TabIndex = 9;
             groupBoxResult_RKN.TabStop = false;
             groupBoxResult_RKN.Text = "Вывод данных";
+            // 
+            // formsPlotChartResult_RKN
+            // 
+            formsPlotChartResult_RKN.DisplayScale = 1F;
+            formsPlotChartResult_RKN.Location = new Point(142, 28);
+            formsPlotChartResult_RKN.Name = "formsPlotChartResult_RKN";
+            formsPlotChartResult_RKN.Size = new Size(509, 375);
+            formsPlotChartResult_RKN.TabIndex = 1;
             // 
             // dataGridViewResult_RKN
             // 
@@ -229,5 +240,7 @@
         private DataGridView dataGridViewResult_RKN;
         private DataGridViewTextBoxColumn X;
         private DataGridViewTextBoxColumn Y;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private ScottPlot.WinForms.FormsPlot formsPlotChartResult_RKN;
     }
 }

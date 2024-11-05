@@ -9,6 +9,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="ScottPlot.WinForms" Version="5.0.43" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Tyuiu.RaushKN.Sprint6.Task3.V14.Lib\Tyuiu.RaushKN.Sprint6.Task3.V14.Lib.csproj" />
   </ItemGroup>
 
