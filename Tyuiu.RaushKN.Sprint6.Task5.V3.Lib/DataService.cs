@@ -11,7 +11,12 @@ namespace Tyuiu.RaushKN.Sprint6.Task5.V3.Lib
             {
                 string line;
                 while ((line = reader.ReadLine()) != null)
-                    len++;
+                {
+                    string trimmedLine = line.Trim();
+                    if (!string.IsNullOrEmpty(trimmedLine) &&
+                    (trimmedLine.Contains('.') || trimmedLine.Contains(','))) len++;
+
+                }
             }
 
             double[] numsArray = new double[len];
@@ -22,13 +27,15 @@ namespace Tyuiu.RaushKN.Sprint6.Task5.V3.Lib
                 string line;
                 while (( line = reader.ReadLine()) != null)
                 {
-                    line = line.Replace(".", ",");
-                    numsArray[i] = Convert.ToDouble(line);
-                    i++;
+                    string trimmedLine = line.Trim();
+                    if (!string.IsNullOrEmpty(trimmedLine) && (trimmedLine.Contains('.') || trimmedLine.Contains(',')))
+                    {
+                        numsArray[i] = Convert.ToDouble(line);
+                        i++;
+                    }
+
                 }
             }
-
-            numsArray = numsArray.Where(val => val > 0).ToArray();
 
             return numsArray;
         }
