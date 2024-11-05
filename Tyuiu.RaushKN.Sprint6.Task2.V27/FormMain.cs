@@ -55,16 +55,6 @@ namespace Tyuiu.RaushKN.Sprint6.Task2.V27
                 MessageBox.Show("Введены неверные данные", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            FillChart();
-        }
-
-        private void FillChart()
-        {
-
-        }
         private void buttonHelp_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Таск 2 выполнил студент группы АСОиУб-24-1 Рауш Кирилл Николаевич", "Справка");

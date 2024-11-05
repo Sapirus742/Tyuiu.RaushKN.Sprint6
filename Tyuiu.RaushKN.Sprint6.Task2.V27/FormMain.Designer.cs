@@ -36,7 +36,6 @@
             textBoxStart_RKN = new TextBox();
             textBox_Start_RKN = new TextBox();
             groupBoxTask_RKN = new GroupBox();
-            pictureBoxFormula_RKN = new PictureBox();
             textBoxTask_RKN = new TextBox();
             groupBoxResult_RKN = new GroupBox();
             formsPlotChartResult_RKN = new ScottPlot.WinForms.FormsPlot();
@@ -46,7 +45,6 @@
             backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             groupBoxEnter_RKN.SuspendLayout();
             groupBoxTask_RKN.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBoxFormula_RKN).BeginInit();
             groupBoxResult_RKN.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridViewResult_RKN).BeginInit();
             SuspendLayout();
@@ -129,7 +127,6 @@
             // 
             // groupBoxTask_RKN
             // 
-            groupBoxTask_RKN.Controls.Add(pictureBoxFormula_RKN);
             groupBoxTask_RKN.Controls.Add(textBoxTask_RKN);
             groupBoxTask_RKN.Location = new Point(12, 12);
             groupBoxTask_RKN.Name = "groupBoxTask_RKN";
@@ -137,14 +134,6 @@
             groupBoxTask_RKN.TabIndex = 5;
             groupBoxTask_RKN.TabStop = false;
             groupBoxTask_RKN.Text = "Условие";
-            // 
-            // pictureBoxFormula_RKN
-            // 
-            pictureBoxFormula_RKN.Location = new Point(449, 28);
-            pictureBoxFormula_RKN.Name = "pictureBoxFormula_RKN";
-            pictureBoxFormula_RKN.Size = new Size(86, 67);
-            pictureBoxFormula_RKN.TabIndex = 1;
-            pictureBoxFormula_RKN.TabStop = false;
             // 
             // textBoxTask_RKN
             // 
@@ -218,7 +207,6 @@
             groupBoxEnter_RKN.PerformLayout();
             groupBoxTask_RKN.ResumeLayout(false);
             groupBoxTask_RKN.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBoxFormula_RKN).EndInit();
             groupBoxResult_RKN.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dataGridViewResult_RKN).EndInit();
             ResumeLayout(false);
@@ -234,7 +222,6 @@
         private TextBox textBoxStart_RKN;
         private TextBox textBox_Start_RKN;
         private GroupBox groupBoxTask_RKN;
-        private PictureBox pictureBoxFormula_RKN;
         private TextBox textBoxTask_RKN;
         private GroupBox groupBoxResult_RKN;
         private DataGridView dataGridViewResult_RKN;

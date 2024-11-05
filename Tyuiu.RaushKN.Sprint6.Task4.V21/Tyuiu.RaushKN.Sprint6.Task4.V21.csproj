@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <PackageReference Include="ScottPlot" Version="5.0.43" />
+    <PackageReference Include="scottplot.winforms" Version="5.0.43" />
   </ItemGroup>
 
   <ItemGroup>
