@@ -13,8 +13,7 @@ namespace Tyuiu.RaushKN.Sprint6.Task6.V5
         string openFilePath;
         private void buttonDone_Clik(object sender, EventArgs e)
         {
-            string str = "l";
-            textBoxResult_RKN.Text = ds.CollectTextFromFile(str, openFilePath);
+            textBoxResult_RKN.Text = ds.CollectTextFromFile(openFilePath);
         }
 
         private void buttonHelp_Click(object sender, EventArgs e)
