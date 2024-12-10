@@ -43,6 +43,7 @@
             LabelInfo_RKN.Size = new Size(322, 152);
             LabelInfo_RKN.TabIndex = 0;
             LabelInfo_RKN.Text = resources.GetString("LabelInfo_RKN.Text");
+            LabelInfo_RKN.SelectionStart = 0;
             // 
             // buttonOk_RKN
             // 

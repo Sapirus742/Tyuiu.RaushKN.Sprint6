@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             groupBoxTask_RKN = new GroupBox();
             pictureBoxFormula_RKN = new PictureBox();
             textBoxTask_RKN = new TextBox();
@@ -60,9 +61,10 @@
             // 
             // pictureBoxFormula_RKN
             // 
-            pictureBoxFormula_RKN.Location = new Point(360, 28);
+            pictureBoxFormula_RKN.Image = (Image)resources.GetObject("pictureBoxFormula_RKN.Image");
+            pictureBoxFormula_RKN.Location = new Point(267, 71);
             pictureBoxFormula_RKN.Name = "pictureBoxFormula_RKN";
-            pictureBoxFormula_RKN.Size = new Size(175, 99);
+            pictureBoxFormula_RKN.Size = new Size(272, 37);
             pictureBoxFormula_RKN.TabIndex = 1;
             pictureBoxFormula_RKN.TabStop = false;
             // 
@@ -76,7 +78,8 @@
             textBoxTask_RKN.ReadOnly = true;
             textBoxTask_RKN.Size = new Size(321, 37);
             textBoxTask_RKN.TabIndex = 0;
-            textBoxTask_RKN.Text = "Протабулировать функцию на заданном диапазоне\r\nРезультат вывести в виде таблицы\r\n";
+            textBoxTask_RKN.Text = "Протабулировать функцию на заданном диапазоне\r\nРезультат вывести в виде таблицы";
+            textBoxTask_RKN.SelectionStart = 0;
             // 
             // groupBoxEnter_RKN
             // 

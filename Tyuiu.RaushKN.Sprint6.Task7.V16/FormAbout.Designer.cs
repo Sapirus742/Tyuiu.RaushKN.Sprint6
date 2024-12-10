@@ -29,20 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAbout));
-            buttonOk_RKN = new Button();
             LabelInfo_RKN = new TextBox();
+            buttonOk_RKN = new Button();
             SuspendLayout();
-            // 
-            // buttonOk_RKN
-            // 
-            buttonOk_RKN.AllowDrop = true;
-            buttonOk_RKN.Location = new Point(204, 155);
-            buttonOk_RKN.Name = "buttonOk_RKN";
-            buttonOk_RKN.Size = new Size(112, 39);
-            buttonOk_RKN.TabIndex = 3;
-            buttonOk_RKN.Text = "Ок";
-            buttonOk_RKN.UseVisualStyleBackColor = true;
-            buttonOk_RKN.Click += buttonRKN_Click;
             // 
             // LabelInfo_RKN
             // 
@@ -52,17 +41,33 @@
             LabelInfo_RKN.Name = "LabelInfo_RKN";
             LabelInfo_RKN.ReadOnly = true;
             LabelInfo_RKN.Size = new Size(322, 152);
-            LabelInfo_RKN.TabIndex = 2;
+            LabelInfo_RKN.TabIndex = 0;
             LabelInfo_RKN.Text = resources.GetString("LabelInfo_RKN.Text");
+            LabelInfo_RKN.SelectionStart = 0;
+            // 
+            // buttonOk_RKN
+            // 
+            buttonOk_RKN.AllowDrop = true;
+            buttonOk_RKN.Location = new Point(204, 155);
+            buttonOk_RKN.Name = "buttonOk_RKN";
+            buttonOk_RKN.Size = new Size(112, 39);
+            buttonOk_RKN.TabIndex = 1;
+            buttonOk_RKN.Text = "Ок";
+            buttonOk_RKN.UseVisualStyleBackColor = true;
+            buttonOk_RKN.Click += buttonRKN_Click;
             // 
             // FormAbout
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(332, 203);
+            ClientSize = new Size(328, 206);
             Controls.Add(buttonOk_RKN);
             Controls.Add(LabelInfo_RKN);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "FormAbout";
+            StartPosition = FormStartPosition.CenterParent;
             Text = "О программе";
             ResumeLayout(false);
             PerformLayout();
@@ -70,7 +75,7 @@
 
         #endregion
 
-        private Button buttonOk_RKN;
         private TextBox LabelInfo_RKN;
+        private Button buttonOk_RKN;
     }
 }

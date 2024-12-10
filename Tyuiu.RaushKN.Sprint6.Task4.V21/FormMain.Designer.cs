@@ -28,7 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             groupBoxResult_RKN = new GroupBox();
+            pictureBoxFormula_RKN = new PictureBox();
             textBoxResult_RKN = new TextBox();
             formsPlotChartResult_RKN = new ScottPlot.WinForms.FormsPlot();
             buttonResult_RKN = new Button();
@@ -42,12 +44,14 @@
             textBoxTask_RKN = new TextBox();
             buttonSave_RKN = new Button();
             groupBoxResult_RKN.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxFormula_RKN).BeginInit();
             groupBoxEnter_RKN.SuspendLayout();
             groupBoxTask_RKN.SuspendLayout();
             SuspendLayout();
             // 
             // groupBoxResult_RKN
             // 
+            groupBoxResult_RKN.Controls.Add(pictureBoxFormula_RKN);
             groupBoxResult_RKN.Controls.Add(textBoxResult_RKN);
             groupBoxResult_RKN.Controls.Add(formsPlotChartResult_RKN);
             groupBoxResult_RKN.Location = new Point(12, 81);
@@ -56,6 +60,15 @@
             groupBoxResult_RKN.TabIndex = 14;
             groupBoxResult_RKN.TabStop = false;
             groupBoxResult_RKN.Text = "Вывод данных";
+            // 
+            // pictureBoxFormula_RKN
+            // 
+            pictureBoxFormula_RKN.Image = (Image)resources.GetObject("pictureBoxFormula_RKN.Image");
+            pictureBoxFormula_RKN.Location = new Point(326, 9);
+            pictureBoxFormula_RKN.Name = "pictureBoxFormula_RKN";
+            pictureBoxFormula_RKN.Size = new Size(341, 46);
+            pictureBoxFormula_RKN.TabIndex = 1;
+            pictureBoxFormula_RKN.TabStop = false;
             // 
             // textBoxResult_RKN
             // 
@@ -170,7 +183,8 @@
             textBoxTask_RKN.ReadOnly = true;
             textBoxTask_RKN.Size = new Size(393, 44);
             textBoxTask_RKN.TabIndex = 0;
-            textBoxTask_RKN.Text = "Протабулировать функцию на заданном диапазоне\r\nРезультат вывести в textBox и построить график функции\r\nСохранить в OutPutFileTask3V21.txt по нажатию кнопки\r\n\r\n";
+            textBoxTask_RKN.Text = "Протабулировать функцию на заданном диапазоне\r\nРезультат вывести в textBox и построить график функции\r\nСохранить в OutPutFileTask3V21.txt по нажатию кнопки";
+            textBoxTask_RKN.SelectionStart = 0;
             // 
             // buttonSave_RKN
             // 
@@ -194,11 +208,13 @@
             Controls.Add(groupBoxEnter_RKN);
             Controls.Add(groupBoxTask_RKN);
             Controls.Add(groupBoxResult_RKN);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "FormMain";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Спринт 6 | Таск 4 | Вариант 21 | Рауш К.Н.";
             groupBoxResult_RKN.ResumeLayout(false);
             groupBoxResult_RKN.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxFormula_RKN).EndInit();
             groupBoxEnter_RKN.ResumeLayout(false);
             groupBoxEnter_RKN.PerformLayout();
             groupBoxTask_RKN.ResumeLayout(false);
@@ -221,5 +237,6 @@
         private ScottPlot.WinForms.FormsPlot formsPlotChartResult_RKN;
         private TextBox textBoxResult_RKN;
         private Button buttonSave_RKN;
+        private PictureBox pictureBoxFormula_RKN;
     }
 }

@@ -166,6 +166,7 @@
             Controls.Add(groupBoxOutPutData_RKN);
             Controls.Add(groupBoxTask_RKN);
             Controls.Add(groupBoxMenu_RKN);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "FormMain";

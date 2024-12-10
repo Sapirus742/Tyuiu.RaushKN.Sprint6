@@ -146,6 +146,7 @@
             textBoxTask_RKN.Size = new Size(393, 37);
             textBoxTask_RKN.TabIndex = 0;
             textBoxTask_RKN.Text = "Протабулировать функцию на заданном диапазоне\r\nРезультат вывести в DataGridView и построить график функции\r\n\r\n\r\n";
+            textBoxTask_RKN.SelectionStart = 0;
             // 
             // groupBoxResult_RKN
             // 

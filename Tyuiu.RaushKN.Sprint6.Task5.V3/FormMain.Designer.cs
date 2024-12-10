@@ -97,6 +97,7 @@
             textBoxTask_RKN.Size = new Size(445, 44);
             textBoxTask_RKN.TabIndex = 0;
             textBoxTask_RKN.Text = "Прочитать данные из файла InPutDataFileTask5.txt. Вывести в dataGridView\r\nположительные значения и построить диаграмму по этим значениям\r\n";
+            textBoxTask_RKN.SelectionStart = 0;
             // 
             // groupBoxResult_RKN
             // 
@@ -135,6 +136,7 @@
             Controls.Add(buttonHelp_RKN);
             Controls.Add(groupBoxTask_RKN);
             Controls.Add(groupBoxResult_RKN);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "FormMain";
             Text = "Спринт 6 | Таск 5 | Вариант 3 | Рауш К.Н.";
             groupBoxTask_RKN.ResumeLayout(false);

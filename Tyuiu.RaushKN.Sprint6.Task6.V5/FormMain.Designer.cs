@@ -152,6 +152,7 @@
             Controls.Add(groupBoxOutPutData_RKN);
             Controls.Add(groupBoxTask_RKN);
             Controls.Add(groupBoxMenu_RKN);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "FormMain";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Спринт 6 | Таск 6 | Вариант 5 | Рауш К.Н.";

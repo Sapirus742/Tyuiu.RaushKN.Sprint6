@@ -38,6 +38,7 @@ namespace Tyuiu.RaushKN.Sprint6.Task3.V14
                     dataGridViewMatrixData_RKN.Rows[i].Cells[j].Value = Convert.ToString(matrix[i, j]);
                 }
             }
+            dataGridViewMatrixData_RKN.Rows[0].Cells[0].Selected = false;
         }
 
         private void buttonHelp_Click(object sender, EventArgs e)

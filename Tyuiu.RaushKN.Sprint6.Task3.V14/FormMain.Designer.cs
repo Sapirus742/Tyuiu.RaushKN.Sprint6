@@ -1,4 +1,6 @@
-﻿namespace Tyuiu.RaushKN.Sprint6.Task3.V14
+﻿using System.Windows.Forms;
+
+namespace Tyuiu.RaushKN.Sprint6.Task3.V14
 {
     partial class FormMain
     {
@@ -65,13 +67,13 @@
             // 
             textBoxTask_RKN.BackColor = SystemColors.Control;
             textBoxTask_RKN.BorderStyle = BorderStyle.None;
-            textBoxTask_RKN.Location = new Point(6, 28);
+            textBoxTask_RKN.Location = new Point(6, 22);
             textBoxTask_RKN.Multiline = true;
             textBoxTask_RKN.Name = "textBoxTask_RKN";
             textBoxTask_RKN.ReadOnly = true;
-            textBoxTask_RKN.Size = new Size(393, 189);
+            textBoxTask_RKN.Size = new Size(302, 201);
             textBoxTask_RKN.TabIndex = 0;
-            textBoxTask_RKN.Text = "Дана матрица 5 на 5:\r\n 1   4  -5 -12  -8\r\n\r\n  -7 -20  11 -13   6\r\n\r\n   2 -12   1 -12   3\r\n\r\n  -1  -7 -20  -6  17\r\n\r\n  -3   3   2  13 -17\r\n\r\nЗаменить четные значения во второй строке на 0.";
+            textBoxTask_RKN.Text = "Дана матрица 5 на 5:\r\n\r\n1   4  -5 -12  -8\r\n\r\n-7 -20  11 -13   6\r\n\r\n2 -12   1 -12   3\r\n\r\n-1  -7 -20  -6  17\r\n\r\n-3   3   2  13 -17\r\n\r\nЗаменить четные значения во второй строке на 0.";
             // 
             // groupBoxResult_RKN
             // 
