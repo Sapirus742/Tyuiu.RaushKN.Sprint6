@@ -64,16 +64,20 @@
             // dataGridViewOutMatrix_RKN
             // 
             dataGridViewOutMatrix_RKN.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewOutMatrix_RKN.ColumnHeadersVisible = false;
             dataGridViewOutMatrix_RKN.Location = new Point(409, 22);
             dataGridViewOutMatrix_RKN.Name = "dataGridViewOutMatrix_RKN";
+            dataGridViewOutMatrix_RKN.RowHeadersVisible = false;
             dataGridViewOutMatrix_RKN.Size = new Size(435, 314);
             dataGridViewOutMatrix_RKN.TabIndex = 1;
             // 
             // dataGridViewInMatrix_RKN
             // 
             dataGridViewInMatrix_RKN.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewInMatrix_RKN.ColumnHeadersVisible = false;
             dataGridViewInMatrix_RKN.Location = new Point(15, 22);
             dataGridViewInMatrix_RKN.Name = "dataGridViewInMatrix_RKN";
+            dataGridViewInMatrix_RKN.RowHeadersVisible = false;
             dataGridViewInMatrix_RKN.Size = new Size(372, 314);
             dataGridViewInMatrix_RKN.TabIndex = 0;
             // 
