@@ -134,6 +134,7 @@
             buttonHelp_RKN.Size = new Size(75, 62);
             buttonHelp_RKN.TabIndex = 2;
             buttonHelp_RKN.Text = "Справка";
+            toolTip_RKN.SetToolTip(buttonHelp_RKN, "Справка");
             buttonHelp_RKN.UseVisualStyleBackColor = true;
             buttonHelp_RKN.Click += buttonHelp_Click;
             // 
@@ -145,6 +146,7 @@
             buttonDone_RKN.Size = new Size(85, 62);
             buttonDone_RKN.TabIndex = 1;
             buttonDone_RKN.Text = "Выполнить";
+            toolTip_RKN.SetToolTip(buttonDone_RKN, "Выполнить ");
             buttonDone_RKN.UseVisualStyleBackColor = true;
             buttonDone_RKN.Click += buttonDone_Click;
             // 
@@ -155,6 +157,7 @@
             buttonOpenFile_RKN.Size = new Size(81, 62);
             buttonOpenFile_RKN.TabIndex = 0;
             buttonOpenFile_RKN.Text = "Загрузить";
+            toolTip_RKN.SetToolTip(buttonOpenFile_RKN, "Загрузить файл");
             buttonOpenFile_RKN.UseVisualStyleBackColor = true;
             buttonOpenFile_RKN.Click += buttonOpenFile_Click;
             // 
