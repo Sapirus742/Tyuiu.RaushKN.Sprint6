@@ -48,6 +48,7 @@
             // 
             // groupBoxMenu_RKN
             // 
+            groupBoxMenu_RKN.BackColor = Color.White;
             groupBoxMenu_RKN.Controls.Add(buttonHelp_RKN);
             groupBoxMenu_RKN.Controls.Add(buttonDone_RKN);
             groupBoxMenu_RKN.Controls.Add(buttonOpenFile_RKN);
@@ -59,11 +60,13 @@
             // 
             // buttonHelp_RKN
             // 
-            buttonHelp_RKN.Location = new Point(728, 22);
+            buttonHelp_RKN.ForeColor = Color.Black;
+            buttonHelp_RKN.Location = new Point(718, 22);
             buttonHelp_RKN.Name = "buttonHelp_RKN";
-            buttonHelp_RKN.Size = new Size(75, 62);
+            buttonHelp_RKN.Size = new Size(85, 62);
             buttonHelp_RKN.TabIndex = 2;
             buttonHelp_RKN.Text = "Справка";
+            buttonHelp_RKN.TextImageRelation = TextImageRelation.ImageAboveText;
             toolTip_RKN.SetToolTip(buttonHelp_RKN, "Справка о программе");
             buttonHelp_RKN.UseVisualStyleBackColor = true;
             buttonHelp_RKN.Click += buttonHelp_Click;

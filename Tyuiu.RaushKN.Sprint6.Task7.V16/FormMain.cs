@@ -23,25 +23,8 @@ namespace Tyuiu.RaushKN.Sprint6.Task7.V16
 
         public int[,] LoadFromFileData(string filePath)
         {
-            string fileData = File.ReadAllText(filePath);
-
-            fileData = fileData.Replace("\n", "\r");
-            string[] lines = fileData.Split(new char[] { '\r' }, StringSplitOptions.RemoveEmptyEntries);
-
-            int rows = lines.Length;
-            int columns = lines[0].Split(';').Length;
-
             int[,] arrayValues = new int[rows, columns];
-
-            for (int r = 0; r < rows; r++)
-            {
-                string[] line_r = lines[r].Split(';');
-                for (int c = 0; c < columns; c++)
-                {
-                    arrayValues[r, c] = Convert.ToInt32(line_r[c]);
-                }
-            }
-
+            arrayValues = ds.GetMatrix(filePath);
             return arrayValues;
         }
 

@@ -80,9 +80,9 @@
             // groupBoxTask_RKN
             // 
             groupBoxTask_RKN.Controls.Add(textBoxTask_RKN);
-            groupBoxTask_RKN.Location = new Point(6, 106);
+            groupBoxTask_RKN.Location = new Point(15, 105);
             groupBoxTask_RKN.Name = "groupBoxTask_RKN";
-            groupBoxTask_RKN.Size = new Size(825, 72);
+            groupBoxTask_RKN.Size = new Size(825, 88);
             groupBoxTask_RKN.TabIndex = 4;
             groupBoxTask_RKN.TabStop = false;
             groupBoxTask_RKN.Text = "Условие";
@@ -95,7 +95,7 @@
             textBoxTask_RKN.Multiline = true;
             textBoxTask_RKN.Name = "textBoxTask_RKN";
             textBoxTask_RKN.ReadOnly = true;
-            textBoxTask_RKN.Size = new Size(819, 50);
+            textBoxTask_RKN.Size = new Size(819, 66);
             textBoxTask_RKN.TabIndex = 0;
             textBoxTask_RKN.Text = resources.GetString("textBoxTask_RKN.Text");
             // 
@@ -163,8 +163,8 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(858, 529);
-            Controls.Add(groupBoxOutPutData_RKN);
             Controls.Add(groupBoxTask_RKN);
+            Controls.Add(groupBoxOutPutData_RKN);
             Controls.Add(groupBoxMenu_RKN);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
